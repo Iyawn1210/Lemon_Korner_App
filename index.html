@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Lemon Corner</title>
+    <meta charset="UTF-8">
+    <meta name="viewport"  content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" ie="edge">
+    <link rel="stylesheet" href="fixed.css">
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="animation.css">
+    <link rel="stylesheet" href="responsive.css">
+
+    <body>
+      <section class="top-bar"></section>
+      <section class="bottom-bar">
+        <div class="quantity-part">
+          <h1 class="order-name">......</h1>
+          <h1 class="order-quantity-txt">X1</h1>
+          <h1>PHP <span class="order-price"> 0.0</span></h1>
+          <div class="order-quantity">
+            <button class="subt">-</button>
+            <input type="number" class="order-quantity-type" value="1" min="1" max="20">
+            <button class="add">+</button>
+          </div>
+        </div>
+        <div class="list-part">
+          <h1><span class="items-quantity">0</span> items in the list</h1>
+          <h1 class="open-list">View order list</h1>
+        </div>
+        <div class="button-part">
+          <button class="cancel-button">Cancel Order</button>
+          <button class="add-button hidden">Add to Order</button>
+        </div>
+      </section>
+      <section class="side-bar">
+        <div class="op" id="op1">
+          <img src="imgs/pizzas.png">
+        </div>
+        <div class="op" id="op2">
+          <img src="imgs/burger.png">
+        </div>
+        <div class="op" id="op3">
+          <img src="imgs/desserts.png">
+        </div>
+        <div class="op" id="op4">
+          <img src="imgs/pasta.png">
+        </div>
+        <div class="op" id="op5">
+          <img src="imgs/drink.png">
+        </div>
+      </section>
+      <section class="search-bar">
+        <h1>Desserts & Sides</h1>
+        <div class="search">
+            <input type="search" class="search-type" placeholder="Search">
+            <button class="search-icon"><img src="imgs/search.png"></button>
+        </div>
+      </section>
+      <section class="main-box">
+        <div class="card " id="lavaCake">
+          <img src="imgs/lavaCake.jpeg" alt="lava-cake">
+          <h1>Lava Cake</h1>
+          <h1>PHP 200 </h1>
+        </div>
+        <div class="card " id="tiramisu">
+          <img src="imgs/tiramisu.jpeg" alt="lava-cake">
+          <h1>Tiramisu Cake</h1>
+          <h1>PHP 300 </h1>
+        </div>
+        <div class="card " id="cheeseCake">
+          <img src="imgs/cheesecake.jpeg" alt="lava-cake">
+          <h1>CheeseCake</h1>
+          <h1>PHP 100 </h1>
+        </div>
+        <div class="card " id="pie">
+          <img src="imgs/pie.jpeg" alt="lava-cake">
+          <h1>Apple Pie</h1>
+          <h1>PHP 400 </h1>
+        </div>
+        <div class="card " id="mashedPotato">
+          <img src="imgs/mashedPotato.jpeg" alt="lava-cake">
+          <h1>Mashed Potato</h1>
+          <h1>PHP 50 </h1>
+        </div>
+        <div class="card " id="salad1">
+          <img src="imgs/salad1.jpeg" alt="lava-cake">
+          <h1>Caesar Salad</h1>
+          <h1>PHP 100 </h1>
+        </div>
+        <div class="card " id="garlicBread">
+          <img src="imgs/garlicBread.jpeg" alt="lava-cake">
+          <h1>Garlic Bread</h1>
+          <h1>PHP 20</h1>
+        </div>
+        <div class="card " id="salad2">
+          <img src="imgs/salad2.jpeg" alt="lava-cake">
+          <h1>Tomato Salad</h1>
+          <h1>PHP 150 </h1>
+        </div>
+
+
+
+
+      </section>
+      <div class="bill hidden">
+        <h1>Lemon Corner</h1>
+        <hr>
+        <p>ORDER SUMMARY<br></p>
+        <p class="order-list"></p>
+        <hr>
+        <p>TOTAL: PHP <span class="total">20</span></p>
+        <hr>
+        <p>Thank you for your purchase</p>
+        <button class="close-modal "></button>
+      </div>
+      <div class="overlay hidden"></div>
+      <script src="script.js"></script>
+  </body>
+</html>
+ 

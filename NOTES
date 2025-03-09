@@ -1,0 +1,32 @@
+const lavaCake = document.querySelector("#lavaCake ");
+const tiramisu = document.querySelector("#tiramisu");
+const cheeseCake = document.querySelector("#cheeseCake");
+const pie = document.querySelector("#pie");
+const mashedPotato = document.querySelector("#mashedPotato");
+const salad1 = document.querySelector("#salad1");
+const garlicBread = document.querySelector("#garlicBread");
+const salad2 = document.querySelector("#salad2");
+
+const desserts = [
+  "Lava Cake",
+  "Tiramisu",
+  "Cheese Cake",
+  "Pie",
+  "Mashed Potato",
+  "Caesar Salad",
+  "Garlic Bread",
+  "Tomato Salad",
+];
+const prices = [200, 300, 100, 400, 50, 100, 20, 150];
+
+const dessertsBtn = function (name, price) {
+  quantityPart.classList.remove("hidden");
+  orderName.textContent = `${name}`;
+  orderQuantityTxt.textContent = `X${temp}`;
+  if (temp2 === 1) {
+    temp2 = temp2 * price;
+  }
+  orderPriceTxt.textContent = temp2;
+};
+lavaCake.addEventListener("click", dessertsBtn(desserts[0], prices[0]));
+tiramisu.addEventListener("click", dessertsBtn(desserts[1], prices[1]));
