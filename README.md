@@ -6,8 +6,11 @@ This is the first e-commerce-like inspiration website, built purely for explorat
 
 
 🚀 Tech Stack:
+
 ✅ HTML – Structure
+
 ✅ CSS – Styling
+
 ✅ JavaScript – Functionality
 
 
